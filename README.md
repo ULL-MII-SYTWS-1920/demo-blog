@@ -8,6 +8,48 @@
   Gatsby's blog starter
 </h1>
 
+# NOT WORKING
+
+
+```
+> gatsby develop
+
+success open and validate gatsby-configs — 0.009 s
+success load plugins — 0.391 s
+success onPreInit — 2.170 s
+success delete html and css files from previous builds — 0.041 s
+success initialize cache — 0.032 s
+success copy gatsby files — 0.196 s
+success onPreBootstrap — 0.007 s
+success source and transform nodes — 0.092 s
+success building schema — 0.530 s
+success createPages — 0.047 s
+success createPagesStatefully — 0.042 s
+success onPreExtractQueries — 0.001 s
+success update schema — 0.173 s
+error GraphQL Error Unknown field `childImageSharp` on type `File`
+
+  file: /Users/casiano/local/src/gatsby-learning/demo-blog/src/components/Bio.js
+
+   1 | 
+   2 |   query BioQuery {
+   3 |     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+>  4 |       childImageSharp {
+     |       ^
+   5 |         fixed(width: 50, height: 50) {
+   6 |           ...GatsbyImageSharpFixed
+   7 |         }
+   8 |       }
+   9 |     }
+  10 |     site {
+  11 |       siteMetadata {
+  12 |         author
+  13 |         social {
+  14 |           twitter
+
+success extract queries from components — 0.136 s
+```
+
 Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
